@@ -13,7 +13,7 @@ def remove_up_to_last(string, char):
 
 def get_assignments():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # change to True once stable
+        browser = p.chromium.launch(headless=True)  # change to True once stable
         page = browser.new_page()
 
         # LOGIN FLOW
